@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        main {
+            padding: 10px;
+            min-width: 400px;
+            display: flex;
+            justify-content: start;
+            /*Colocar las tarjetas en medio horizontal*/
+            align-items: center;
+            /*Colocar las tarjetas en medio vertical*/
+            flex-wrap: wrap;
+            
+        }
+
+        .card {
+            padding: 0;;
+            width: 30vh;
+            min-width: 150px;
+            height: 300px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .card:hover {
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .card>*:not(h1, footer) {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            height: 14.3%;
+            line-height: 250%;
+        }
+
+        .card *:nth-child(2),
+        .card *:nth-child(7) {
+            background-color: #EEEEEE;
+        }
+
+        .footer_card {
+            line-height: 250%;
+            margin: 0;;
+        }
+
+
+        .black {
+            color: white;
+            background-color: black;
+        }
+
+        .purple {
+            color: white;
+            background-color: #676CAF;
+        }
+
+        .card a {
+            background-color: #676CAF;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <h1 class="black">Básico</h1>
+            <p>$ 9.99 / año</p>
+            <p>10GB de Almacenamiento</p>
+            <p>10 Correos Electrónicos</p>
+            <p>10 Dominios</p>
+            <p>1GB de Ancho de Banda</p>
+            <footer class="footer_card"><a href="#">Registrarse</a></footer>
+        </div>
+
+        <div class="card">
+            <h1 class="purple">Pro</h1>
+            <p>$ 24.99 / año</p>
+            <p>25GB de Almacenamiento</p>
+            <p>25 Correos Electrónicos</p>
+            <p>25 Dominios</p>
+            <p>2GB de Ancho de Banda</p>
+            <footer class="footer_card"><a href="#">Registrarse</a></footer>
+        </div>
+
+        <div class="card">
+            <h1 class="black">Premium</h1>
+            <p>$ 49.99 / año</p>
+            <p>50GB de Almacenamiento</p>
+            <p>50 Correos Electrónicos</p>
+            <p>50 Dominios</p>
+            <p>5GB de Ancho de Banda</p>
+            <footer class="footer_card"><a href="#">Registrarse</a></footer>
+        </div>
+    </main>
+</body>
+
+</html>
